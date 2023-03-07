@@ -5,15 +5,25 @@ html,body{
   max-width: 600px;
   height:100%;
   margin: 0 auto;
-  border: 1px solid #ccc
 }
 .input-area{
   position: relative;
   left: 40px;
 }
-.post_form{
-  padding: 20px 40px;
-  border: 1px solid #ccc;
+.header_main img{
+  width: 60px;
+}
+.header_main{
+  display: flex;
+  gap: 2%;
+  padding: 10px;
+}
+.post_form {
+    padding: 30px 40px;
+    border: 1px solid #ccc;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
 }
 .post_form input{
   width: 70%;
@@ -21,7 +31,10 @@ html,body{
   padding: 10px;
   border: 1px solid #ccc;
 }
-post_form textarea{
+.post_form .logo{
+  text-align: right;
+}
+.post_form textarea{
   width: 70%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -29,7 +42,11 @@ post_form textarea{
 .posts li{
 display: flex;
 border-bottom: 1px solid #ccc;
+border-left: 1px solid #ccc;
+border-right: 1px solid #ccc;
 position: relative;
+list-style: none;
+padding: 1vw 0;
 }
 .posts ul{
 padding: 0;
@@ -38,14 +55,15 @@ padding: 0;
   flex-basis: 15%;
 }
 .logo img{
-  width:30%;
-  padding: 0px;
+  width: 100px;
+  /* padding: 0px; */
 }
-.posts li .name-body{
+.posts li .name_body{
   flex-basis: 85%;
 }
 .posts li .name_body .name{
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: bold;
 }
 .posts li .name_body .datetime{
   color: gray
@@ -59,6 +77,15 @@ padding: 0;
   width: 100%;
   height: 50%;
   flex-basis: 15%;
+}
+
+
+.header_main{
+  display: flex;
+  justify-content: center;
+}
+.header_main .img{
+  width: 3vw;
 }
 .posts li .menu{
   flex-basis: 15%;
@@ -74,11 +101,39 @@ padding: 0;
 .posts li .menu a{
   text-decoration: none;
 }
-.posts li .js-menu-icon{
+.posts li .menu_icon{
  
   width: 20px;
   height: 20px;
   position: relative;
   left: 550px;
   top: 20px;
+}
+
+img.post-border {
+  width: 60%;
+}
+.posts .like{
+  width: 5%;
+  top: 20%;
+  left: -10%;
+}
+img#likebutton {
+  width: 6%;
+}
+.header{
+  display: flex;
+  gap: 2%;
+  padding: 10px;
+}
+.header_main img{
+  width: 60px;
+}
+.header_main{
+  display: flex;
+  gap: 2%;
+  padding: 10px;
+}
+#title img{
+  width: 8%;
 }

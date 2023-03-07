@@ -1,4 +1,7 @@
 from django.db import models
+from django.forms import DateTimeField
+from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 class Post(models.Model):
     class Meta(object):
@@ -15,5 +18,14 @@ class Post(models.Model):
             'Created DateTime', blank=True, auto_now_add=True
         )
         
+    image =CloudinaryField(
+        'image', blank=True,db_index=True
+    )
+
+
+    likecount= models.IntegerField(
+        'Likes', default=0,null=True, blank=True, db_index=True
+    )
+
 
 
